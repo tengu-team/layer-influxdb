@@ -1,0 +1,31 @@
+name: influxdb
+maintainer: Gregory Van Seghbroeck <gregory.vanseghbroeck@ugent.be>
+summary:  InfluxDB is a time series database designed for great performance.
+description: |
+  InfluxDB is a time series database built from the ground up to handle high 
+  write and query loads. InfluxDB is a custom high performance datastore written 
+  specifically for time series data. InfluxDB is used as a backing store for any 
+  timestamped data, including DevOps monitoring, application metrics, IoT sensor 
+  data, and real-time analytics.
+
+  Features
+  Built-in HTTP API so you don't have to write any server side code to get up 
+  and running.
+  Data can be tagged, allowing very flexible querying.
+  SQL-like query language.
+  Simple to install and manage, and fast to get data in and out.
+  It aims to answer queries in real-time. That means every data point is indexed 
+  as it comes in and is immediately available in queries that should return in 
+  < 100ms.
+tags:
+  - bigdata
+  - time_series
+subordinate: false
+provides:
+  admin:
+    interface: http
+  api:
+    interface: influxdb-api
+  grafana-source:
+    interface: grafana-source
+series: ['xenial']

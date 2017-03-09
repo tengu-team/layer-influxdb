@@ -1,0 +1,6 @@
+includes: ['layer:basic', 'layer:apt', 'interface:grafana-source', 'interface:influxdb-api', 'interface:http']
+repo: git@github.com:IBCNServices/layer-influxdb.git
+options:
+  apt:
+    install_sources:
+      - deb https://repos.influxdata.com/ubuntu xenial stable

@@ -1,0 +1,13 @@
+options:
+  api_port:
+    type: int
+    default: 8086
+    description: |
+      This TCP port is used for client-server communication over InfluxDB’s
+      HTTP API.
+  rpc_port:
+    type: int
+    default: 8088
+    description: |
+      This TCP port is used for the RPC service for backup and restore.
+  
